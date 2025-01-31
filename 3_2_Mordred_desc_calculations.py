@@ -2,7 +2,7 @@ from utils.lgbm_mordred_utils import get_mordred
 import pandas as pd
 
 '''
-Run with 'mordred' environment!!
+Run with 'mordred' environment!! (python = 3.9.21, numpy = 1.19.5. Reason for new environment is due to conflict with existing packages)
 '''
 data = pd.read_csv('./Caco-2 Permeability Dataset/Filtered Data/3D_optimizable_dataset.csv')
 mordred_desc = get_mordred(data)
