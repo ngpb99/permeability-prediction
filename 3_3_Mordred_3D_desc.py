@@ -1,6 +1,10 @@
 from mordred import Calculator, descriptors
 import pandas as pd
 
+'''
+Purpose of this is to determine how well 3D descriptors contribute to performance. As well as isolate them for SHAP analysis
+'''
+
 n_all = Calculator(descriptors, ignore_3D=False).descriptors
 n_2D = Calculator(descriptors, ignore_3D=True).descriptors
 
